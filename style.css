@@ -1,0 +1,425 @@
+/*--------------------------- GENERAL STYLING------------------------------- */
+
+
+@font-face {
+    font-family: poppins;
+    src: url(./webFont/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: bold-poppins;
+    src: url(./webFont/Poppins/Poppins-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sub-text{
+    font-weight: 300;
+    font-size: 1rem;
+    color: #666d80;
+    padding: 1rem 0;
+}
+
+.btn a {
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.light-btn a{
+    background: #ffffff;
+    color: #000;
+}
+
+.dark-btn a{
+    background: #202428;
+    color: #ffffff;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 65px;
+    font-family: bold-poppins;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 36px;
+    font-family: bold-poppins;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2rem;
+    font-family: bold-poppins;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: bold-poppins;
+}
+
+/*X--------------------------- GENERAL STYLING-------------------------------X */
+
+
+.first-view {
+    background: url(./images/first-view-bg.png);
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    background-position-x: 600px;
+    background-position-y: -80px;
+    padding: 2rem 3rem;
+    height: 130vh;
+}
+
+/* -----------------------------NAVIGATION------------------------------------------------ */
+
+ .logo {
+    transform: scale(0.6);
+}
+
+.first-view ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.first-view ul li a{
+    padding: 0 3rem;
+    color: #000;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------X-----------------NAVIGATION------------------------------X------------------ */
+
+
+/* ---------------------------------------------CONTENT-------------------------------- */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-pic {
+    flex: 1 0 70%;
+    align-self: flex-end;  
+}
+
+.first-flex .home-content{
+    margin-top: 10rem;
+    width: 20%;
+}
+
+.home-content {
+    flex: 1 0 30%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.home-content p {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.second-view {
+    display: flex;
+    flex-direction: column;
+    background: #f7f9fc;
+    padding: 3rem;
+}
+
+
+.second-flex .home-pic {
+    transform: scale(0.8);
+    animation: from-right 2s;
+    position: relative;
+}
+
+.second-flex .home-content {
+    align-self: center;
+    animation: from-left 2s;
+    position: relative;
+}
+
+.row-1 {
+    align-self: flex-start;
+}
+
+.row-2 {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    margin-top: -5rem;
+}
+
+.row-3 {
+    align-self: flex-start;
+    margin-top: -5rem;
+}
+
+.third-view {
+    padding: 3rem;
+    background: linear-gradient(63deg, rgba(203,239,255,1) 5%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 69%, rgba(250,236,255,1) 94%); ;
+}
+ 
+.third-view .flex {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.flex-item {
+   flex-basis: 25%;
+   align-self: center;
+   margin-right: 5rem;
+}
+
+.flex-item h6 span {
+    font-family: poppins;
+    background: #000;
+    font-size: 15px;
+    border-radius: 50%;
+    color: #fff;
+    height: 5px;
+    width: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.flex-item p {
+    margin: 0.5rem 1rem;
+}
+
+.third-view-btn {
+    text-align: center;
+}
+
+.third-view-btn a {
+    font-family: bold-poppins;
+    font-size: 18px;
+}
+
+.fourth-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    margin:40vh auto;
+    border-radius: 10px;
+    background: url(./images/getApp_bg.png);
+    height: 50vh;
+    width: 98%;
+    box-shadow: -2px -2px 89px -23px rgba(0,0,0,0.4);
+    -webkit-box-shadow: -2px -2px 89px -23px rgba(0,0,0,0.4);
+    -moz-box-shadow: -2px -2px 89px -23px rgba(0,0,0,0.4);
+    animation: fade-off 4s;
+}
+
+.fourth-flex {
+    flex-direction: column;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.fourth-view .home-pic {
+    transform: scale(0.4) rotate(20deg);
+    align-self: center;
+    border: 30px #fff solid;
+    border-radius: 32px;
+    box-shadow: -2px -2px 89px -23px rgba(0,0,0,0.4);
+    -webkit-box-shadow: -2px -2px 89px -23px rgba(0,0,0,0.4);
+    -moz-box-shadow: -2px -2px 89px -23px rgba(0,0,0,0.4);
+}
+
+.store img {
+    width: 10rem;
+    margin-right: 2rem;
+}
+
+.fifth-view {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.logo-item .socials {
+    margin: 2rem;
+    display: flex;
+}
+
+.soc {
+    margin-right: 1rem;
+}
+
+.bottom-menu {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-around;
+}
+
+menu ul li{
+    list-style: none;
+    margin-top: 2rem;
+}
+
+menu ul a {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #666d80;
+}
+
+footer {
+    margin: 3rem;
+    border-top: 1px solid #d3d3d3;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 21px;
+    padding: 2rem 0;
+    color: #bababa;
+}
+
+
+/*----------------------- KEYFRAMES------------------------------- */
+
+@keyframes fade-off {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes from-left {
+    0% {bottom: -500px; opacity: 0;}
+    100% {bottom: 0; opacity: 1;}
+}
+@keyframes from-right {
+    0% {right: -1000px; opacity: 0;}
+    100% {right: 0; opacity: 1;}
+}
+
+
+/*------------------------ MEDIA QUERY------------------------------- */
+@media (max-width: 800px) {
+
+    h1 {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: bold-poppins;
+    }
+    
+    h3 {
+        font-weight: 300;
+        font-size: 20px;
+        font-family: bold-poppins;
+        text-align: center;
+    }
+    
+    h4 {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1rem;
+        font-family: bold-poppins;
+    }
+    
+    h6 {
+        font-weight: 300;
+        font-size: 15px;
+        font-family: bold-poppins;
+    }
+
+    .sub-text {
+        text-align: center;
+    }
+
+    .first-view {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .home-content,
+    .home-pic{
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .first-flex .home-content{
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .third-view .flex {
+        align-items: flex-start;
+    }
+    
+    .flex-item {
+       align-self: flex-start;
+    }
+    
+   
+    
+    .flex-item p,
+    .third-view-btn {
+        text-align: left;
+        margin: 0.5rem 0;
+    }
+
+    .store img {
+        transform: scale(0.5);
+        align-items: flex-start;
+    }
+
+    .fifth-view,
+    .bottom-menu {
+        flex-direction: column;
+    }
+
+    .fifth-view .logo-item .logo {
+        width: 120px;
+    }
+
+    menu {
+        margin-bottom: 2rem;
+    }
+
+    
+    
+   
+}
